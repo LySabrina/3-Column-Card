@@ -1,0 +1,125 @@
+:root {
+  --ff-big-shoulders: "Big Shoulders Display", sans-serif;
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --c-orange: hsl(31, 77%, 52%);
+  --c-dark-cyan: hsl(184, 100%, 22%);
+  --c--very-dark--cyan: hsl(179, 100%, 13%);
+
+  --c-netural-white: hsla(0, 0%, 100%, 0.75);
+  --c-light-gray: hsl(0, 0%, 95%);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 1em;
+}
+
+.card {
+  padding: 2em;
+  min-height: 25em;
+  max-width: 20em;
+}
+
+.first-card {
+  border-radius: 0.5em 0.5em 0px 0px;
+}
+.last-card {
+  border-radius: 0px 0px 0.5em 0.5em;
+}
+.card > * {
+  margin: 1em 0px 1em 0px;
+}
+
+.card-orange {
+  background-color: var(--c-orange);
+}
+
+.card-cyan {
+  background-color: var(--c-dark-cyan);
+}
+
+.card-dark-cyan {
+  background-color: var(--c--very-dark--cyan);
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-family: var(--ff-big-shoulders);
+  color: var(--c-light-gray);
+}
+
+.card__description {
+  color: var(--c-netural-white);
+  font-family: var(--ff-lexend);
+  font-weight: var(--fw-regular);
+  font-size: 15px;
+  line-height: 1.6em;
+  max-height: 25%;
+}
+
+.card__btn {
+  background-color: white;
+  font-family: var(--ff-lexend);
+  padding: 1em;
+
+  border-radius: 2em;
+  border: 2px solid white;
+}
+
+.card__btn-orange {
+  color: var(--c-orange);
+}
+
+.card__btn-cyan {
+  color: var(--c-dark-cyan);
+}
+.card__btn-dark-cyan {
+  color: var(--c--very-dark--cyan);
+}
+
+.card__btn:hover {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
+  .container {
+    display: flex;
+  }
+  .card {
+    /* min-height: 20em; */
+    max-height: 40em;
+  }
+  .first-card {
+    border-radius: 0.5em 0px 0px 0.5em;
+  }
+  .last-card {
+    border-radius: 0px 0.5em 0.5em 0px;
+  }
+
+  .card__btn {
+    margin-top: 25%;
+  }
+  .card__title {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+}
