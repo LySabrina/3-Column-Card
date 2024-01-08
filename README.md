@@ -35,8 +35,8 @@ Mobile version has a scrollable view.
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/LySabrina/QR-Code)
-- Live Site URL: [Live Site](https://lysabrina.github.io/QR-Code/)
+- Solution URL: [GitHub](https://github.com/LySabrina/3-Column-Card)
+- Live Site URL: [Live Site](https://lysabrina.github.io/3-Column-Card/)
 
 ## My process
 
